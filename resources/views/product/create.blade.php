@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('product.Layout.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crear Producto - ProShop</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+@section('title', 'Crear Producto - ProShop')
 
-<body>
-    <!-- Header -->
-    @include('product.Layout.navbar')
-
+@section('content')
     <!-- Main Content -->
     <div class="container">
         <div class="form-container">
@@ -21,8 +12,8 @@
                 <!-- ID Producto -->
                 <div class="form-group">
                     <label for="id_producto">ID Producto <span class="required">*</span></label>
-                    <input type="text" id="id_producto" name="id_producto" placeholder="Ej: PRD-001" required
-                        readonly aria-readonly="true">
+                    <input type="text" id="id_producto" name="id_producto" placeholder="Ej: PRD-001" required readonly
+                        aria-readonly="true">
                     <span class="help-text">Identificador único del producto</span>
                 </div>
 
@@ -82,8 +73,4 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    @include('product.Layout.footer')
-</body>
-
-</html>
+@endsection

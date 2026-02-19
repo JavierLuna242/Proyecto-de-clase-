@@ -1,18 +1,8 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('product.Layout.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Productos - ProShop</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+@section('title', 'Productos - ProShop')
 
-<body>
-    <!-- Header -->
-    @include('product.Layout.navbar')
-
+@section('content')
     <!-- Banner -->
     <div class="banner">
         ✨ Mega Ofertas del Mes - Descuentos hasta 50% - Envío Gratis en compras mayores a $50 ✨
@@ -199,14 +189,11 @@
                         <div class="price">$45</div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    @include('product.Layout.footer')
-</body>
-
-</html>
+@endsection

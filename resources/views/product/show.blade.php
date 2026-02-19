@@ -1,22 +1,12 @@
-<!DOCTYPE html>
-<html lang="es">
+@extends('product.Layout.app')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Detalles del Producto - ProShop</title>
-    <link rel="stylesheet" href="/css/style.css">
-</head>
+@section('title', 'Detalles del Producto - ProShop')
 
-<body>
-    <!-- Header -->
-    @include('product.Layout.navbar')
-
+@section('content')
     <!-- Breadcrumb -->
     <div class="breadcrumb">
-        <a href="#" onclick="return false;">🏠 Inicio</a> / <a href="#" onclick="return false;">📦
-            Productos</a> / <span>💻 Laptop Ultra Gaming 15.6"
-            FHD</span>
+        <a href="#" onclick="return false;">🏠 Inicio</a> / <a href="#" onclick="return false;">📦 Productos</a> /
+        <span>💻 Laptop Ultra Gaming 15.6" FHD</span>
     </div>
 
     <!-- Main Content -->
@@ -177,8 +167,4 @@
         </div>
     </div>
 
-    <!-- Footer -->
-    @include('product.Layout.footer')
-</body>
-
-</html>
+@endsection
