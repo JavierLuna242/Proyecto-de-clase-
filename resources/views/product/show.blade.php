@@ -5,24 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Producto - ProShop</title>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">ProShop</div>
-        <div class="nav-links">
-            <a href="/" class="nav-link">🏠 Inicio</a>
-            <a href="/productos" class="nav-link">📦 Productos</a>
-            <a href="#" class="nav-link">👤 Cuenta</a>
-            <a href="#" class="nav-link">🛒 Carrito</a>
-        </div>
-    </header>
+    @include('product.Layout.navbar')
 
     <!-- Breadcrumb -->
     <div class="breadcrumb">
-        <a href="/">🏠 Inicio</a> / <a href="/productos">📦 Productos</a> / <span>💻 Laptop Ultra Gaming 15.6"
+        <a href="#" onclick="return false;">🏠 Inicio</a> / <a href="#" onclick="return false;">📦
+            Productos</a> / <span>💻 Laptop Ultra Gaming 15.6"
             FHD</span>
     </div>
 
@@ -102,9 +95,11 @@
 
                     <!-- Action Buttons -->
                     <div class="action-buttons">
-                        <button class="btn btn-primary">🛒 Agregar al Carrito</button>
-                        <button class="btn btn-secondary">❤️ Favoritos</button>
-                        <button class="btn btn-share">Compartir</button>
+                        <button type="button" class="btn btn-primary" disabled aria-disabled="true">🛒 Agregar al
+                            Carrito</button>
+                        <button type="button" class="btn btn-secondary" disabled aria-disabled="true">❤️
+                            Favoritos</button>
+                        <button type="button" class="btn btn-share" disabled aria-disabled="true">Compartir</button>
                     </div>
 
                     <!-- Specifications Table -->
@@ -182,34 +177,8 @@
         </div>
     </div>
 
-    <script>
-        // Thumbnail image switching
-        const thumbnails = document.querySelectorAll('.thumbnail');
-        const mainImage = document.querySelector('.product-main-image');
-
-        thumbnails.forEach(thumbnail => {
-            thumbnail.addEventListener('click', () => {
-                // Reemplazar parámetros de tamaño en URL de Unsplash
-                const newSrc = thumbnail.src.replace('w=100&h=100', 'w=600&h=600');
-                mainImage.src = newSrc;
-                thumbnails.forEach(thumb => thumb.classList.remove('active'));
-                thumbnail.classList.add('active');
-            });
-        });
-
-        // Button interactions
-        document.querySelector('.btn-primary').addEventListener('click', () => {
-            alert('Producto agregado al carrito');
-        });
-
-        document.querySelector('.btn-secondary').addEventListener('click', () => {
-            alert('Producto agregado a favoritos');
-        });
-
-        document.querySelector('.btn-share').addEventListener('click', () => {
-            alert('Compartir: puedes copiar el enlace o compartir en redes sociales');
-        });
-    </script>
+    <!-- Footer -->
+    @include('product.Layout.footer')
 </body>
 
 </html>

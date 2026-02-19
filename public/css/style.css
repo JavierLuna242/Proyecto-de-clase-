@@ -927,6 +927,7 @@ textarea {
         gap: 16px;
     }
 
+
     .product-image-wrapper {
         height: 200px;
     }
@@ -1024,4 +1025,95 @@ textarea {
     .section-title {
         font-size: 24px;
     }
+    
+/* ===========================
+   FOOTER STYLES
+   =========================== */
+.site-footer {
+    background: linear-gradient(180deg, #f4f7fb 0%, #e9eef6 100%);
+    padding: 36px 0;
+    margin-top: 48px;
+    border-top: 1px solid rgba(34, 47, 62, 0.04);
+}
+
+.site-footer .footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.footer-col .logo {
+    color: #667eea;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 6px;
+}
+
+.footer-col p {
+    color: #556370;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.footer-col h4 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.footer-col ul {
+    list-style: disc;
+    margin: 0 0 12px 18px;
+    padding: 0;
+}
+
+.footer-col a {
+    color: #667eea;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 8px;
+    font-size: 20px;
+    line-height: 1;
+}
+
+.footer-credit {
+    text-align: center;
+    color: #7f8c8d;
+    margin-top: 22px;
+    font-size: 14px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 900px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+    .footer-credit {
+        text-align: left;
+    }
+}
 }

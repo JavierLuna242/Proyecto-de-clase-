@@ -6,20 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - ProShop</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
     <!-- Header -->
-    <header>
-        <div class="logo">ProShop</div>
-        <div class="search-bar">
-            <input type="text" placeholder="Busca tus productos favoritos...">
-            <button>Buscar</button>
-        </div>
-        <div class="account">👤 Cuenta</div>
-        <div class="cart">🛒</div>
-    </header>
+    @include('product.Layout.navbar')
 
     <!-- Banner -->
     <div class="banner">
@@ -49,7 +41,8 @@
                         <div class="price">$1,899 <span class="original-price">$2,999</span></div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
 
@@ -71,7 +64,8 @@
                         <div class="price">$45 <span class="original-price">$89</span></div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
 
@@ -92,7 +86,8 @@
                         <div class="price">$129</div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
 
@@ -114,7 +109,8 @@
                         <div class="price">$429 <span class="original-price">$599</span></div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
 
@@ -136,7 +132,8 @@
                         <div class="price">$199 <span class="original-price">$299</span></div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
 
@@ -157,7 +154,8 @@
                         <div class="price">$79</div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
 
@@ -179,7 +177,8 @@
                         <div class="price">$29 <span class="original-price">$49</span></div>
                     </div>
                     <div class="delivery-info">🚚 Envío Gratis</div>
-                    <button class="add-to-cart-btn">Agregar al Carrito</button>
+                    <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        Carrito</button>
                 </div>
             </div>
 
@@ -206,16 +205,8 @@
         </div>
     </div>
 
-    <script>
-        // Agregar interactividad a los botones
-        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
-            btn.addEventListener('click', function() {
-                const productName = this.closest('.product-card').querySelector('.product-name')
-                    .textContent;
-                alert(`${productName} agregado al carrito!`);
-            });
-        });
-    </script>
+    <!-- Footer -->
+    @include('product.Layout.footer')
 </body>
 
 </html>
