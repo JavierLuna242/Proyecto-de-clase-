@@ -3,7 +3,7 @@
 @section('title', 'Productos - ProShop')
 
 @section('content')
-    <!-- Banner -->
+
     <div class="banner">
         ✨ Mega Ofertas del Mes - Descuentos hasta 50% - Envío Gratis en compras mayores a $50 ✨
     </div>
@@ -16,7 +16,7 @@
             <!-- Producto 1 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=400&h=400&fit=crop"
+                    <img src="https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000"
                         alt="Laptop Ultra Gaming" class="product-image">
                     <div class="discount-badge">-37%</div>
                     <div class="stock-badge">En Stock</div>
@@ -39,7 +39,7 @@
             <!-- Producto 2 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=400&h=400&fit=crop"
+                    <img src="https://www.logitechstore.com.co/cdn/shop/files/D_884565-MCO76612920004_062024-B.jpg?v=1749834185&width=600"
                         alt="Mouse Inalámbrico" class="product-image">
                     <div class="discount-badge">-49%</div>
                     <div class="stock-badge">En Stock</div>
@@ -62,7 +62,7 @@
             <!-- Producto 3 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1587829191301-48aca1c0cfe2?w=400&h=400&fit=crop"
+                    <img src="https://www.pcware.com.co/wp-content/uploads/2024/01/22VG-GSPL_001-1200x675.jpg"
                         alt="Teclado Mecánico" class="product-image">
                     <div class="stock-badge">En Stock</div>
                 </div>
@@ -84,7 +84,7 @@
             <!-- Producto 4 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1527815050087-3793815479db?w=400&h=400&fit=crop"
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4krQdQJEe4Lvwja-VW93LJsvMFdFruN4urA&s"
                         alt="Monitor 4K" class="product-image">
                     <div class="discount-badge">-28%</div>
                     <div class="stock-badge">En Stock</div>
@@ -107,7 +107,7 @@
             <!-- Producto 5 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&h=400&fit=crop"
+                    <img src="https://m.media-amazon.com/images/I/71ZpqzTlZrL._AC_SL1500_.jpg"
                         alt="Auriculares Bluetooth" class="product-image">
                     <div class="discount-badge">-33%</div>
                     <div class="stock-badge limited">Pocas unidades</div>
@@ -130,8 +130,8 @@
             <!-- Producto 6 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1587911591437-4f4a97e54b32?w=400&h=400&fit=crop"
-                        alt="Webcam Full HD" class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_925898-MLA96080197057_102025-O.webp" alt="Webcam Full HD"
+                        class="product-image">
                     <div class="stock-badge">En Stock</div>
                 </div>
                 <div class="product-content">
@@ -152,8 +152,8 @@
             <!-- Producto 7 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1527522883525-f2202e388e23?w=400&h=400&fit=crop"
-                        alt="Mousepad XXL" class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_795471-MCO49868204742_052022-O.webp" alt="Mousepad XXL"
+                        class="product-image">
                     <div class="discount-badge">-40%</div>
                     <div class="stock-badge">En Stock</div>
                 </div>
@@ -175,8 +175,8 @@
             <!-- Producto 8 -->
             <div class="product-card">
                 <div class="product-image-wrapper">
-                    <img src="https://images.unsplash.com/photo-1625948515291-69613efd103f?w=400&h=400&fit=crop"
-                        alt="Hub USB 3.0" class="product-image">
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_744604-MLU71551272271_092023-O.webp" alt="Hub USB 3.0"
+                        class="product-image">
                     <div class="stock-badge">En Stock</div>
                 </div>
                 <div class="product-content">
@@ -197,3 +197,4 @@
     </div>
 
 @endsection
+  

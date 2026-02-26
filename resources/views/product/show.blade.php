@@ -15,16 +15,16 @@
             <div class="product-layout">
                 <!-- Image Section -->
                 <div class="product-image-section">
-                    <img src="https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=600&h=600&fit=crop"
+                    <img src="https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000"
                         class="product-main-image" alt="Producto">
                     <div class="product-thumbnails">
-                        <img src="https://images.unsplash.com/photo-1588872657840-790ff3bde08c?w=100&h=100&fit=crop"
+                        <img src="https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000"
                             class="thumbnail active" alt="Imagen 1">
-                        <img src="https://images.unsplash.com/photo-1589939705882-451ec28ca7f7?w=100&h=100&fit=crop"
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_849262-MLA88397809363_072025-F.webp"
                             class="thumbnail" alt="Imagen 2">
-                        <img src="https://images.unsplash.com/photo-1603302576837-37561b1e2c91?w=100&h=100&fit=crop"
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_864278-MLA88398016339_072025-F.webpp"
                             class="thumbnail" alt="Imagen 3">
-                        <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=100&h=100&fit=crop"
+                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_765615-MLA94121343960_102025-F.webp"
                             class="thumbnail" alt="Imagen 4">
                     </div>
                 </div>
@@ -61,8 +61,8 @@
                     <div class="description-box">
                         <div class="description-title">Descripción del Producto</div>
                         <div class="description-text">
-                            Potente laptop gaming con procesador Intel Core i7 de última generación, 16GB de RAM DDR4 y
-                            SSD de 512GB. Pantalla IPS Full HD de 15.6" con colores vibrantes. Ideal para juegos, diseño
+                            Potente laptop gaming con procesador Intel Core i7 de última generación, 32GB de RAM DDR6 y
+                            SSD de 1TB NVMe. Pantalla IPS Full HD de 15.6" con colores vibrantes. Ideal para juegos, diseño
                             gráfico y aplicaciones profesionales.
                         </div>
                     </div>
@@ -108,15 +108,15 @@
                         </tr>
                         <tr>
                             <td>Memoria RAM</td>
-                            <td>16GB DDR4 3200MHz</td>
+                            <td>32GB DDR6 3200MHz</td>
                         </tr>
                         <tr>
                             <td>Almacenamiento</td>
-                            <td>512GB SSD NVMe</td>
+                            <td>1TB SSD NVMe</td>
                         </tr>
                         <tr>
                             <td>Tarjeta Gráfica</td>
-                            <td>NVIDIA GeForce RTX 3050 6GB</td>
+                            <td>NVIDIA GeForce RTX 5070 12GB</td>
                         </tr>
                         <tr>
                             <td>Batería</td>
@@ -139,25 +139,25 @@
                 <h2 class="section-title">Productos Relacionados</h2>
                 <div class="products-grid">
                     <div class="related-card">
-                        <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?w=150&h=150&fit=crop"
+                        <img src="https://www.logitechstore.com.co/cdn/shop/files/D_884565-MCO76612920004_062024-B.jpg?v=1749834185&width=600"
                             alt="Producto">
                         <div class="related-card-name">Mouse Inalámbrico Premium RGB</div>
                         <div class="related-card-price">$45</div>
                     </div>
                     <div class="related-card">
-                        <img src="https://images.unsplash.com/photo-1587829191301-48aca1c0cfe2?w=150&h=150&fit=crop"
+                        <img src="https://www.pcware.com.co/wp-content/uploads/2024/01/22VG-GSPL_001-1200x675.jpg"
                             alt="Producto">
                         <div class="related-card-name">Teclado Mecánico RGB Switches</div>
                         <div class="related-card-price">$129</div>
                     </div>
                     <div class="related-card">
-                        <img src="https://images.unsplash.com/photo-1527522883525-f2202e388e23?w=150&h=150&fit=crop"
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4krQdQJEe4Lvwja-VW93LJsvMFdFruN4urA&s"
                             alt="Producto">
                         <div class="related-card-name">Monitor 4K 32" Ultra HD</div>
                         <div class="related-card-price">$429</div>
                     </div>
                     <div class="related-card">
-                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=150&h=150&fit=crop"
+                        <img src="https://m.media-amazon.com/images/I/71ZpqzTlZrL._AC_SL1500_.jpg"
                             alt="Producto">
                         <div class="related-card-name">Auriculares Bluetooth Noise Cancelling</div>
                         <div class="related-card-price">$199</div>

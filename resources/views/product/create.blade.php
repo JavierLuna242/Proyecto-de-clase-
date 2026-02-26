@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Main Content -->
-    <div class="container">
+    <div class="center-page">
         <div class="form-container">
             <div class="form-title">Crear Producto</div>
 

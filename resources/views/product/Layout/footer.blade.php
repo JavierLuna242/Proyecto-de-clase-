@@ -17,17 +17,17 @@
             <div class="footer-col">
                 <h4>Empresa</h4>
                 <ul>
-                    <li><a href="#">Acerca de</a></li>
-                    <li><a href="#">Carreras</a></li>
-                    <li><a href="#">Prensa</a></li>
+                    <li><a href="#">Acerca de ProShop</a></li>
+                    <li><a href="#">Terminos y Condiciones</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Síguenos</h4>
                 <div class="social-icons">
-                    <a href="#" aria-label="twitter" class="social">🐦</a>
-                    <a href="#" aria-label="facebook" class="social">📘</a>
-                    <a href="#" aria-label="instagram" class="social">📸</a>
+                        <a href="#" aria-label="instagram" class="social instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="twitter" class="social twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="facebook" class="social facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>
