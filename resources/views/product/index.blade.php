@@ -16,9 +16,9 @@
                 <!-- Producto 1 -->
                 <div class="product-card">
                     <div class="product-image-wrapper">
-                        @if($product->image)
-                            <img src="{{ asset('storage/' . $product->image) }}"
-                                alt="Laptop Ultra Gaming" class="product-image">
+                        @if ($product->image)
+                            <img src="{{ asset('storage/' . $product->image) }}" alt="Laptop Ultra Gaming"
+                                class="product-image">
                         @else
                             <img src="https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000"
                                 alt="Laptop Ultra Gaming" class="product-image">
@@ -39,6 +39,11 @@
                         <div class="delivery-info">🚚 Envío Gratis</div>
                         <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
                             Carrito</button>
+                        <form action="{{ route('product.destroy', $product) }}" method="POST">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="add-to-cart-btn" style="margin-top: 10px;">Eliminar</button>
+                        </form>
                     </div>
                 </div>
             @endforeach
