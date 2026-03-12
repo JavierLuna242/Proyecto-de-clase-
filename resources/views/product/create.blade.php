@@ -15,20 +15,28 @@
                 <div class="form-group-double">
                     <div class="form-group">
                         <label for="nombre">Nombre del Producto <span class="required">*</span></label>
-                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Laptop Gaming Pro" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ej: Laptop Gaming Pro">
+                        @error('nombre')
+                            <span style="color: red; font-size: 14px;">{{ $message }}</span>
+                        @enderror
                     </div>
                     <div class="form-group">
                         <label for="precio">Precio <span class="required">*</span></label>
-                        <input type="number" id="precio" name="precio" placeholder="Ej: 1999.99" step="0.01"
-                            min="0" required>
+                        <input type="number" id="precio" name="precio" placeholder="Ej: 1999.99" step="0.01">
+                        @error('precio')
+                            <span style="color: red; font-size: 14px;">{{ $message }}</span>
+                        @enderror
                     </div>
                 </div>
 
                 <!-- Descripción -->
                 <div class="form-group">
                     <label for="descripcion">Descripción <span class="required">*</span></label>
-                    <textarea id="descripcion" name="descripcion" placeholder="Ingresa una descripción detallada del producto..." required></textarea>
+                    <textarea id="descripcion" name="descripcion" placeholder="Ingresa una descripción detallada del producto..."></textarea>
                     <span class="help-text">Máximo 500 caracteres</span>
+                    @error('descripcion')
+                        <span style="color: red; font-size: 14px;">{{ $message }}</span>
+                    @enderror
                 </div>
 
                 <!-- Imagen -->
@@ -41,6 +49,9 @@
                         </label>
                     </div>
                     <span class="help-text">Formatos soportados: JPG, PNG, GIF. Tamaño máximo: 5MB</span>
+                    @error('imagen')
+                        <span style="color: red; font-size: 14px;">{{ $message }}</span>
+                    @enderror
                 </div>
 
                 <!-- Estado -->
@@ -50,8 +61,10 @@
                         @foreach ($categoryList as $category)
                             <option value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
-
                     </select>
+                    @error('categoria')
+                        <span style="color: red; font-size: 14px;">{{ $message }}</span>
+                    @enderror
                 </div>
 
                 <!-- Buttons -->
