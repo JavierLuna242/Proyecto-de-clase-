@@ -132,8 +132,15 @@ header {
 }
 
 @keyframes slide {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0.9; }
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
 }
 
 /* ===========================
@@ -1131,11 +1138,21 @@ textarea {
     opacity: 0.95;
 }
 
-.social-icons .social.facebook { background: linear-gradient(135deg,#3b5998,#355089); }
-.social-icons .social.twitter  { background: linear-gradient(135deg,#1da1f2,#0d95e8); }
-.social-icons .social.instagram{ background: linear-gradient(135deg,#f58529,#dd2a7b); }
+.social-icons .social.facebook {
+    background: linear-gradient(135deg, #3b5998, #355089);
+}
 
-.social-icons .social i { line-height: 1; }
+.social-icons .social.twitter {
+    background: linear-gradient(135deg, #1da1f2, #0d95e8);
+}
+
+.social-icons .social.instagram {
+    background: linear-gradient(135deg, #f58529, #dd2a7b);
+}
+
+.social-icons .social i {
+    line-height: 1;
+}
 
 .footer-credit {
     text-align: center;
@@ -1156,8 +1173,8 @@ textarea {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+
     .footer-credit {
         text-align: left;
     }
 }
-
