@@ -8,8 +8,14 @@
         ✨ Mega Ofertas del Mes - Descuentos hasta 50% - Envío Gratis en compras mayores a $50 ✨
     </div>
 
-    <!-- Main Content -->
     <div class="container">
+        
+        @if(session('cart_success'))
+            <div style="background: rgba(34,197,94,0.15); border: 1px solid rgba(34,197,94,0.4); color: #4ade80; padding: 14px 20px; border-radius: 12px; margin-bottom: 24px; font-weight: 500;">
+                ✅ {{ session('cart_success') }}
+            </div>
+        @endif
+        
         <h1 class="section-title">Productos Destacados</h1>
         <div class="products-grid">
             @foreach ($misProductos as $product)
@@ -37,8 +43,12 @@
                             <div class="price">${{ number_format($product->price) }}</div>
                         </div>
                         <div class="delivery-info">🚚 Envío Gratis</div>
-                        <button type="button" class="add-to-cart-btn" style="width: 100%; text-align: center;" disabled aria-disabled="true">Agregar al
-                            Carrito</button>
+                        <form action="{{ route('cart.add', $product) }}" method="POST" style="width: 100%;">
+                            @csrf
+                            <button type="submit" class="add-to-cart-btn" style="width: 100%; text-align: center; margin-top: 10px;">
+                                Agregar al Carrito
+                            </button>
+                        </form>
                         <a href="{{ route('product.show', $product) }}" class="add-to-cart-btn" style="text-decoration: none; display: block; text-align: center; margin-top: 10px; width: 100%; box-sizing: border-box;">Ver Detalles</a>
                         <form action="{{ route('product.destroy', $product) }}" method="POST" style="width: 100%;">
                             @csrf

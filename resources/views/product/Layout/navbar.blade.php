@@ -8,6 +8,6 @@
         <a href="#" class="nav-link" onclick="return false;">🏠 Inicio</a>
         <a href="#" class="nav-link" onclick="return false;">📦 Productos</a>
         <a href="#" class="nav-link" onclick="return false;">👤 Cuenta</a>
-        <a href="#" class="nav-link" onclick="return false;">🛒 Carrito</a>
+        <a href="{{ route('cart.index') }}" class="nav-link">🛒 Carrito</a>
     </nav>
 </header>

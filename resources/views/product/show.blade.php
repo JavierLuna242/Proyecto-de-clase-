@@ -11,6 +11,13 @@
 
     <!-- Main Content -->
     <div class="container">
+
+        @if(session('cart_success'))
+            <div style="background: rgba(34,197,94,0.15); border: 1px solid rgba(34,197,94,0.4); color: #4ade80; padding: 14px 20px; border-radius: 12px; margin-bottom: 24px; font-weight: 500;">
+                ✅ {{ session('cart_success') }}
+            </div>
+        @endif
+
         <div class="product-container">
             <div class="product-layout">
                 <!-- Image Section -->
@@ -80,10 +87,11 @@
 
                     <!-- Action Buttons -->
                     <div class="action-buttons">
-                        <button type="button" class="btn btn-primary" disabled aria-disabled="true">🛒 Agregar al
-                            Carrito</button>
-                        <button type="button" class="btn btn-secondary" disabled aria-disabled="true">❤️
-                            Favoritos</button>
+                        <form action="{{ route('cart.add', $producto) }}" method="POST" style="display: contents;">
+                            @csrf
+                            <button type="submit" class="btn btn-primary">🛒 Agregar al Carrito</button>
+                        </form>
+                        <button type="button" class="btn btn-secondary" disabled aria-disabled="true">❤️ Favoritos</button>
                         <button type="button" class="btn btn-share" disabled aria-disabled="true">Compartir</button>
                     </div>
 
