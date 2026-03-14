@@ -37,12 +37,13 @@
                             <div class="price">${{ number_format($product->price) }}</div>
                         </div>
                         <div class="delivery-info">🚚 Envío Gratis</div>
-                        <button type="button" class="add-to-cart-btn" disabled aria-disabled="true">Agregar al
+                        <button type="button" class="add-to-cart-btn" style="width: 100%; text-align: center;" disabled aria-disabled="true">Agregar al
                             Carrito</button>
-                        <form action="{{ route('product.destroy', $product) }}" method="POST">
+                        <a href="{{ route('product.show', $product) }}" class="add-to-cart-btn" style="text-decoration: none; display: block; text-align: center; margin-top: 10px; width: 100%; box-sizing: border-box;">Ver Detalles</a>
+                        <form action="{{ route('product.destroy', $product) }}" method="POST" style="width: 100%;">
                             @csrf
                             @method('DELETE')
-                            <button type="submit" class="add-to-cart-btn" style="margin-top: 10px;">Eliminar</button>
+                            <button type="submit" class="add-to-cart-btn" style="margin-top: 10px; width: 100%; text-align: center;">Eliminar</button>
                         </form>
                     </div>
                 </div>

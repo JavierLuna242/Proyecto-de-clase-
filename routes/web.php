@@ -10,6 +10,6 @@ Route::prefix('product')->controller(ProductController::class)->group(function (
     Route::get('/', 'index')->name('product.index');
     Route::get('/create', 'create');
     Route::post('/store', 'store')->name('product.store');
-    Route::get('/{producto}', 'show');
+    Route::get('/{producto}', 'show')->name('product.show');
     Route::delete('/{producto}', 'destroy')->name('product.destroy');
 });

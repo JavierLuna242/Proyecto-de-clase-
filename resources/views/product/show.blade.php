@@ -5,8 +5,8 @@
 @section('content')
     <!-- Breadcrumb -->
     <div class="breadcrumb">
-        <a href="#" onclick="return false;">🏠 Inicio</a> / <a href="#" onclick="return false;">📦 Productos</a> /
-        <span>💻 Laptop Ultra Gaming 15.6" FHD</span>
+        <a href="{{ route('product.index') }}">🏠 Inicio</a> / <a href="{{ route('product.index') }}">📦 Productos</a> /
+        <span>💻 {{ $producto->name }}</span>
     </div>
 
     <!-- Main Content -->
@@ -15,24 +15,24 @@
             <div class="product-layout">
                 <!-- Image Section -->
                 <div class="product-image-section">
-                    <img src="https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000"
-                        class="product-main-image" alt="Producto">
+                    <img src="{{ $producto->image ? asset('storage/' . $producto->image) : 'https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000' }}"
+                        class="product-main-image" alt="{{ $producto->name }}">
                     <div class="product-thumbnails">
-                        <img src="https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000"
-                            class="thumbnail active" alt="Imagen 1">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_849262-MLA88397809363_072025-F.webp"
-                            class="thumbnail" alt="Imagen 2">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_864278-MLA88398016339_072025-F.webpp"
-                            class="thumbnail" alt="Imagen 3">
-                        <img src="https://http2.mlstatic.com/D_NQ_NP_2X_765615-MLA94121343960_102025-F.webp"
-                            class="thumbnail" alt="Imagen 4">
+                        <img src="{{ $producto->image ? asset('storage/' . $producto->image) : 'https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000' }}"
+                            class="thumbnail active" alt="{{ $producto->name }} - Vista 1">
+                        <img src="{{ $producto->image ? asset('storage/' . $producto->image) : 'https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000' }}"
+                            class="thumbnail" alt="{{ $producto->name }} - Vista 2">
+                        <img src="{{ $producto->image ? asset('storage/' . $producto->image) : 'https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000' }}"
+                            class="thumbnail" alt="{{ $producto->name }} - Vista 3">
+                        <img src="{{ $producto->image ? asset('storage/' . $producto->image) : 'https://exitocol.vtexassets.com/arquivos/ids/31725643/Computador-Gaming-HP-Omen-Gaming-Intel-Core-Ultra-7-155H-RAM-16-GB-1-TB-SSD-14-fb0001la-3568707_a.jpg?v=638984923323400000' }}"
+                            class="thumbnail" alt="{{ $producto->name }} - Vista 4">
                     </div>
                 </div>
 
                 <!-- Details Section -->
                 <div class="product-details">
-                    <div class="product-id">SKU: PRD-001</div>
-                    <h1 class="product-title">Laptop Ultra Gaming 15.6" FHD Procesador i7 16GB RAM 512GB SSD</h1>
+                    <div class="product-id">SKU: PRD-{{ str_pad($producto->id, 3, '0', STR_PAD_LEFT) }}</div>
+                    <h1 class="product-title">{{ $producto->name }}</h1>
 
                     <!-- Rating -->
                     <div class="product-rating">
@@ -44,11 +44,8 @@
                     <!-- Price Section -->
                     <div class="price-section">
                         <div class="price-container">
-                            <span class="current-price">$1,899</span>
-                            <span class="original-price">$2,999</span>
-                            <span class="discount-badge">-37%</span>
+                            <span class="current-price">${{ number_format($producto->price) }}</span>
                         </div>
-                        <div class="savings-text">Ahorras $1,100</div>
                     </div>
 
                     <!-- Stock Status -->
@@ -61,9 +58,7 @@
                     <div class="description-box">
                         <div class="description-title">Descripción del Producto</div>
                         <div class="description-text">
-                            Potente laptop gaming con procesador Intel Core i7 de última generación, 32GB de RAM DDR6 y
-                            SSD de 1TB NVMe. Pantalla IPS Full HD de 15.6" con colores vibrantes. Ideal para juegos, diseño
-                            gráfico y aplicaciones profesionales.
+                            {{ $producto->description }}
                         </div>
                     </div>
 

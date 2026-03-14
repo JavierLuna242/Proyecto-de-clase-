@@ -15,7 +15,7 @@
             seguridad, garantía y envíos rápidos a todo el país.
         </p>
 
-        <a href="{{ route('product.index') }}" class="add-to-cart-btn">
+        <a href="{{ route('product.index') }}" class="add-to-cart-btn" style="text-decoration: none; display: inline-block; text-align: center;">
             Explorar Productos
         </a>
 
@@ -34,7 +34,7 @@
                 <div class="product-content">
                     <h3>💻 Computadores</h3>
                     <p>Equipos de alto rendimiento para trabajo y gaming.</p>
-                    <a href="{{ route('product.index') }}" class="add-to-cart-btn">
+                    <a href="{{ route('product.index') }}" class="add-to-cart-btn" style="text-decoration: none; display: block; text-align: center; width: 100%; box-sizing: border-box;">
                         Ver productos
                     </a>
                 </div>
@@ -44,7 +44,7 @@
                 <div class="product-content">
                     <h3>🎧 Accesorios</h3>
                     <p>Audífonos, teclados, mouse y accesorios tecnológicos.</p>
-                    <a href="{{ route('product.index') }}" class="add-to-cart-btn">
+                    <a href="{{ route('product.index') }}" class="add-to-cart-btn" style="text-decoration: none; display: block; text-align: center; width: 100%; box-sizing: border-box;">
                         Ver productos
                     </a>
                 </div>
@@ -54,7 +54,7 @@
                 <div class="product-content">
                     <h3>📱 Smartphones</h3>
                     <p>Los últimos modelos del mercado al mejor precio.</p>
-                    <a href="{{ route('product.index') }}" class="add-to-cart-btn">
+                    <a href="{{ route('product.index') }}" class="add-to-cart-btn" style="text-decoration: none; display: block; text-align: center; width: 100%; box-sizing: border-box;">
                         Ver productos
                     </a>
                 </div>
@@ -136,7 +136,7 @@
                         </span>
                     </div>
 
-                    <a href="{{ url('/product/'.$product->id) }}" class="add-to-cart-btn">
+                    <a href="{{ url('/product/'.$product->id) }}" class="add-to-cart-btn" style="text-decoration: none; display: block; text-align: center; width: 100%; box-sizing: border-box;">
                         Ver producto
                     </a>
 
@@ -161,7 +161,7 @@
             Tenemos muchos más productos disponibles en nuestro catálogo.
         </p>
 
-        <a href="{{ route('product.index') }}" class="add-to-cart-btn">
+        <a href="{{ route('product.index') }}" class="add-to-cart-btn" style="text-decoration: none; display: inline-block; text-align: center;">
             Ver todos los productos
         </a>
 
