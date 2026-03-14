@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\CategoryController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProductController;
@@ -15,6 +16,7 @@ Route::prefix('product')->controller(ProductController::class)->group(function (
     Route::delete('/{producto}', 'destroy')->name('product.destroy');
 });
 
-Route::prefix('admin')->controller(AdminController::class)->group(function () {
-    Route::get('/', 'index')->name('admin.index');
+Route::prefix('admin')->group(function () {
+    Route::get('/', [AdminController::class, 'index'])->name('admin.index');
+    Route::resource('categories', CategoryController::class)->names('admin.categories');
 });

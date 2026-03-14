@@ -8,7 +8,7 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $products = Product::latest()->get();
+        $products = Product::latest()->take(5)->get();
         $totalProducts = Product::count();
         $topProducts = Product::take(4)->get();
 

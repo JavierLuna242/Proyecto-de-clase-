@@ -8,8 +8,11 @@
             <a href="{{ route('admin.index') }}" class="admin-nav-link active">
                 <i class="fa-solid fa-chart-pie"></i> Overview
             </a>
-            <a href="{{ route('product.index') }}" class="admin-nav-link">
+            <a href="{{ route('product.index') }}" class="admin-nav-link {{ request()->routeIs('product.*') ? 'active' : '' }}">
                 <i class="fa-solid fa-box"></i> Inventario
+            </a>
+            <a href="{{ route('admin.categories.index') }}" class="admin-nav-link {{ request()->routeIs('admin.categories.*') ? 'active' : '' }}">
+                <i class="fa-solid fa-tags"></i> Categorías
             </a>
             <a href="#" class="admin-nav-link">
                 <i class="fa-solid fa-users"></i> Clientes
